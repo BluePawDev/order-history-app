@@ -2,11 +2,14 @@
 
 ## Customer List
 
-[X] List all customers from DB on the left-hand side of the screen on page load [ ] Each customer listing should have a button next to it that will, when clicked, retrieve all of the order information for that customer.
+- List all customers from DB on the left-hand side of the screen on page load
+- Each customer should have a button next to it that will, when clicked, retrieve all of the order information for that customer.
 
 ## Order History
 
-The order information will be displayed on the right-hand side of the screen whenever a customer order button is clicked. The order information should be grouped by order and listed with the oldest order first.
+The order information will be displayed on the right-hand side of the screen whenever a customer order button is clicked
+
+- Order information should be grouped by order and listed with the oldest order first
 
 Include the order number and all line items and product details (name, unit price, quantity ordered) on the listing. The line items should be totaled to show a total dollar amount for the order. The orders.total field isn't quite right so don't rely on it! You'll have to total it some other way.
 

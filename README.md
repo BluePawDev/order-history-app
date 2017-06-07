@@ -13,7 +13,10 @@ We will be using the same data and tables from that exercise.
 ### Required Modules
 
 - body-parser
+- Jason
+
 - express
+
 - pg
 
 ## Customer List

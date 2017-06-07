@@ -1,5 +1,7 @@
 console.log('JavaScript sourced');
 
-$(document).ready(function() {
+$(onReady);
+
+function onReady() {
 	console.log('jQuery sourced');
-});
+}

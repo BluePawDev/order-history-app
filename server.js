@@ -57,3 +57,25 @@ app.get('/customers', function(req, res) {
 		}
 	});
 });
+
+
+app.put('/orders', function(req, res) {
+	var custID = req.body.id;
+	var orderArray = [];
+	pool.connect(function(err, connection, done) {
+		if (err) {
+			console.log('Error connect to DB');
+			done();
+			res.sendStatus(400);
+		} else {
+			var resultSet = connection.query('SELECT orders.id, addresses.street, addresses.city, addresses.state, addresses.zip, products.description, products.unit_price, line_items.quantity FROM customers JOIN addresses ON customers.id = addresses.customer_id JOIN orders ON addresses.id = orders.address_id JOIN line_items ON orders.id = line_items.order_id JOIN products ON line_items.product_id = products.id WHERE customers.id = $1', [custID]);
+			resultSet.on('row', function(row) {
+				orderArray.push(row);
+			});
+			resultSet.on('end', function() {
+				done();
+				res.send(orderArray);
+			});
+		}
+	});
+});

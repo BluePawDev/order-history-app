@@ -1,24 +1,8 @@
 # Order History App (Peer)
 
-In this challenge, your job is to flex and explore your Node/Express, SQL, and jQuery skillz. You're going to be building a full stack order history viewing application.
-
-## Installation
-
-Please refer to the "SQL Joins Solo Challenge" for the database set-up.
-
-We will be using the same data and tables from that exercise.
-
-## Node Set-up
-
-### Required Modules
-
-- body-parser
-- express
-- pg
-
 ## Customer List
 
-Your app should list all customers from the database on the left-hand side of the screen upon page load. Each customer listing should have a button next to it that will, when clicked, retrieve all of the order information for that customer.
+[] List all customers from DB on the left-hand side of the screen on page load [] Each customer listing should have a button next to it that will, when clicked, retrieve all of the order information for that customer.
 
 ## Order History
 

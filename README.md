@@ -2,7 +2,7 @@
 
 ## Customer List
 
-[ ] List all customers from DB on the left-hand side of the screen on page load [ ] Each customer listing should have a button next to it that will, when clicked, retrieve all of the order information for that customer.
+[X] List all customers from DB on the left-hand side of the screen on page load [ ] Each customer listing should have a button next to it that will, when clicked, retrieve all of the order information for that customer.
 
 ## Order History
 
